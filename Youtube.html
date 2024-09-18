@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YouTube_clone</title>
+        <link rel="stylesheet" href="Youtube.css" type="text/css">
+    </head>
+    <body>
+        <div class="sideToolbar">
+            <button class="menuButton">
+                <svg xmlns="http://www.w3.org/2000/svg" class="menu"><path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path></svg>
+
+            </button>
+         
+            <button class="toolbarButtons">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="homeButton"><g><path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z "></path></g></svg>
+                <a style="font-size: 10px;">Home</a>
+            
+            </button>
+            <button class="toolbarButtons">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="shortsButton"><path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"></path></svg>
+                <a style="font-size: 10px;">Shorts</a>
+            
+            </button>
+            <button class="toolbarButtons">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="subscriptionsButton"><path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path></svg>
+                <a style="font-size: 10px; margin-left: -3px;">Subscriptions</a>
+
+            </button>
+            <button class="toolbarButtons">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="youButton"><path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path></svg>
+                <a style="font-size: 10px;">   You   </a>
+
+            </button>
+        </div>
+        
+        <div class="mainBody">
+            
+            <div class="headerBox">
+                <div class="searchBox">
+                    <div class="logo">
+                        <img src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-9.png" 
+                        style="margin-top: 22px;
+                        height: 20px;
+                        width: 90px;
+                        float: left;
+                        cursor: pointer;">
+                        <a style="    margin-left: 4px;
+                        margin-top: 16px;
+                        font-size: 10px;
+                        float: left;">IN</a>
+                    </div>
+                    <div class="search"> 
+                        <div class="searchBackground">
+                            <input type="text" class="searchInput" placeholder="Search">
+                            <div class="lensBackground">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="lens"><path clip-rule="evenodd" d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z" fill-rule="evenodd"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="createBar">
+                        <button class="voice">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z"></path></svg>
+                        </button>
+                        <button class="create">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" style="pointer-events: none; display: inherit; width: 100%; height: 100%; margin-left: 1px;" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"><path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"></path></svg>
+
+                        </button>
+                        <button class="notification">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z"></path></svg>
+
+                        </button>
+                        <button class="account">
+                            <img id="img" src="https://yt3.ggpht.com/yti/ANjgQV-2YJOfc4ata_isOFPH8ENfWYKabdGp2m7SxBiSZ30wQA=s88-c-k-c0x00ffffff-no-rj-mo">
+                        </button>
+                    </div>
+                </div>
+                <div class="suggestionBox">
+                    <button class="all">All</button>
+                    <button class="suggestionButtons">News</button>
+                    <button class="suggestionButtons">Push-ups</button>
+                    <button class="suggestionButtons">Visual Effects</button>
+                    <button class="suggestionButtons">Gaming</button>
+                    <button class="suggestionButtons">Blenders</button>
+                    <button class="suggestionButtons">Music</button>
+                    <button class="suggestionButtons">Science Fiction</button>
+                    <button class="suggestionButtons">Calisthenics</button>
+                    <button class="suggestionButtons">Pull-ups</button>
+                    <button class="suggestionButtons">4K resolutions</button>
+                    <div class="arrowBox">
+                        <div class="gradiant"></div>
+                        <div class="rightArrow">
+                            <div class="arrowIcon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="m9.4 18.4-.7-.7 5.6-5.6-5.7-5.7.7-.7 6.4 6.4-6.3 6.3z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="contentBox">
+
+            </div>
+            <table >
+                <!-- table for video content -->
+                <tbody class="contentTable">
+                    <tr>
+                        <td>
+                            <button class="duration">12:07</button>
+                            <img src="https://i.ytimg.com/vi/FLUY9ythKaQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAp6bLaqDK8sD_l3jB19LiKMdP61w" class="thumbnail">
+                        </td>
+                        <td>
+                            <button class="duration" style="margin-left: 328px;">3:55</button>
+                            <img src="https://i.ytimg.com/vi/hOHKltAiKXQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCmlBh0rP48CpQ5s1bpSAR9KcmjRg" class="thumbnail">
+                        </td>
+                        <td>
+                            <button class="duration" style="margin-left: 328px;">1:08</button>
+                            <img src="https://i.ytimg.com/vi/35S7zTBFRhQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB6bKMU0foqpx80kZN5pdoKNb4p1Q" class="thumbnail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="channelIconBox">
+                                <div class="channelIcon"><img src="https://yt3.googleusercontent.com/ytc/AIdro_mPkdS1NVAv3Mz5Onf18yAZ5TlU487ov56Vx6Cd12tS0_c=s160-c-k-c0x00ffffff-no-rj" class="channelImage"></div>
+                                <div class="nameBox">
+                                    <txt class="videoTitle">
+                                        Arm Day Ice Cream Pumb
+                                    </txt>
+                                    <div class="channelNameVerificationBox">
+                                        <txt class="channelName">
+                                            Chris Bumstead
+                                        </txt>
+                                        <div class="verifiedIcon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%; color:#858585; "><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+                                        </div>
+                                        <txt class="views_year">
+                                            317K views • 8 days ago
+                                        </txt>
+                                    </div>
+                                </div>
+                                <div class="optionBox">
+                                    <div class="options"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="channelIconBox">
+                                <div class="channelIcon"><img src="https://yt3.googleusercontent.com/_rO8IOjqWOx-nB8q3TX0Wag1McsdxxNgT2CF9m-oLU5U7H-p0QdEuPkDC37Hjldu7pjzd0X4Og=s160-c-k-c0x00ffffff-no-rj" class="channelImage"></div>
+                                <div class="nameBox">
+                                    <txt class="videoTitle">
+                                        Hanumankind – Big Dawgs | Ft. Kalmi (Official Music Video) | Def Jam India
+                                    </txt>
+                                    <div class="channelNameVerificationBox">
+                                        <txt class="channelName">
+                                            Hanumankind
+                                        </txt>
+                                        <div class="verifiedIcon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 4v9.38c-.73-.84-1.8-1.38-3-1.38-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V8h6V4h-7z"></path></svg>                                        </div>
+                                        <txt class="views_year">
+                                            84M views • 1 month ago
+                                        </txt>
+                                    </div>
+                                </div>
+                                <div class="optionBox">
+                                    <div class="options"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="channelIconBox">
+                                <div class="channelIcon"><img src="https://yt3.ggpht.com/yKfa-GV-v_O-6jZKHwBuc2FX0Q5ths8OqYTOAmOwzVY0q3miZT0L-rUzve-M2QBdONcTYaEO_JI=s176-c-k-c0x00ffffff-no-rj-mo" class="channelImage"></div>
+                                <div class="nameBox">
+                                    <txt class="videoTitle">
+                                        Are you ready to discover my new channel?
+                                    </txt>
+                                    <div class="channelNameVerificationBox">
+                                        <txt class="channelName">
+                                            UR · Cristiano
+                                        </txt>
+                                        <div class="verifiedIcon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%; color:#858585; "><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+                                        </div>
+                                        <txt class="views_year">
+                                            17M views • 10 days ago
+                                        </txt>
+                                    </div>
+                                </div>
+                                <div class="optionBox">
+                                    <div class="options"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="duration">25:42</button>
+                            <img src="https://i.ytimg.com/vi/0e3GPea1Tyg/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD97HrPD21P7TSwUSpdGr2vz7i7cg" class="thumbnail">
+                        </td>
+                        <td>
+                            <button class="duration">23:43</button>
+                            <img src="https://i.ytimg.com/vi/JyJd111Ym7U/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBya4rSfPaYcYxe0ttYyCJLdb8t-Q" class="thumbnail">
+                        </td>
+                        <td>
+                            <button class="duration" style="margin-left: 328px;">3:42</button>
+                            <img src="https://i.ytimg.com/vi/LK7-_dgAVQE/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDpuoL89S7MhpNnIgO8wB-mqcX2-w" class="thumbnail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="channelIconBox">
+                                <div class="channelIcon"><img src="https://yt3.googleusercontent.com/fxGKYucJAVme-Yz4fsdCroCFCrANWqw0ql4GYuvx8Uq4l_euNJHgE-w9MTkLQA805vWCi-kE0g=s160-c-k-c0x00ffffff-no-rj" class="channelImage"></div>
+                                <div class="nameBox">
+                                    <txt class="videoTitle">
+                                        $456,000 Squid Game In Real Life!
+                                    </txt>
+                                    <div class="channelNameVerificationBox">
+                                        <txt class="channelName">
+                                            MrBeast
+                                        </txt>
+                                        <div class="verifiedIcon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%; color:#858585; "><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+                                        </div>
+                                        <txt class="views_year">
+                                            349M views • 3 years ago
+                                        </txt>
+                                    </div>
+                                </div>
+                                <div class="optionBox">
+                                    <div class="options"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="channelIconBox">
+                                <div class="channelIcon"><img src="https://yt3.googleusercontent.com/oQ2NQMuq-9IS6_MZdsGXa0RWecaACremA01Z7jo-YpoEF1H6PyUF8PZzXkV10OYwSP3UMJDeTg=s160-c-k-c0x00ffffff-no-rj" class="channelImage"></div>
+                                <div class="nameBox">
+                                    <txt class="videoTitle">
+                                        Arvind Kejriwal Jailed! | DICTATORSHIP Confirmed? | Dhruv Rathee
+                                    </txt>
+                                    <div class="channelNameVerificationBox">
+                                        <txt class="channelName">
+                                            Dhruv Rathee
+                                        </txt>
+                                        <div class="verifiedIcon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%; color:#858585; "><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+                                        </div>
+                                        <txt class="views_year">
+                                            37M views • 4 month ago
+                                        </txt>
+                                    </div>
+                                </div>
+                                <div class="optionBox">
+                                    <div class="options"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="channelIconBox">
+                                <div class="channelIcon"><img src="https://yt3.googleusercontent.com/dxED1O-r5cRS73JBlUk4VS3pZHDfiHcuRjRbFMcf6KgYhxP4NUlD7x0h4TR1XTXkl-JGjTPTYQ=s160-c-k-c0x00ffffff-no-rj" class="channelImage"></div>
+                                <div class="nameBox">
+                                    <txt class="videoTitle">
+                                        Tauba Tauba | Bad Newz | Vicky Kaushal | Triptii Dimri | Karan Aujla
+                                    </txt>
+                                    <div class="channelNameVerificationBox">
+                                        <txt class="channelName">
+                                            Saregama Music
+                                        </txt>
+                                        <div class="verifiedIcon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 4v9.38c-.73-.84-1.8-1.38-3-1.38-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V8h6V4h-7z"></path></svg>                                        </div>
+                                        <txt class="views_year">
+                                            227M views • 1 month ago
+                                        </txt>
+                                    </div>
+                                </div>
+                                <div class="optionBox">
+                                    <div class="options"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="duration" style="margin-left: 328px;">3:05</button>
+                            <img src="https://i.ytimg.com/vi/drr8XByJMMI/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAiVdUJfAMKaDHg69OrUUH7_SF5jw" class="thumbnail">
+                        </td>
+                        <td>
+                            <button class="duration" style="margin-left: 328px;">7:31</button>
+                            <img src="https://i.ytimg.com/vi/xYAqZgi41Y8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBr7vdyCF2j-6nVypQ0mX0-g2Tdow" class="thumbnail">
+                        </td>
+                        <td>
+                            <button class="duration">13:44</button>
+                            <img src="https://i.ytimg.com/vi/8oYVdqC4naE/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDoDM0Xdlaq04UzBBnMKyXYJBSK1Q" class="thumbnail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="channelIconBox">
+                                <div class="channelIcon"><img src="https://yt3.googleusercontent.com/2BT2HJhaIEoq2jmMtmrFhK9ca2VNcHNpzaZDh7JeRZgC0HWbDtWuMwuJKUQ2sw3pf9T7iDswcw=s160-c-k-c0x00ffffff-no-rj" class="channelImage"></div>
+                                <div class="nameBox">
+                                    <txt class="videoTitle">
+                                        Habibi Drip | Nivin Pauly | Ribin Richard | Dabzee | Kuttu Sivanandan |Shahin Rahman |Nikhil |Richa
+                                    </txt>
+                                    <div class="channelNameVerificationBox">
+                                        <txt class="channelName">
+                                            Pauly Jr. Pictures
+                                        </txt>
+                                        <div class="verifiedIcon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%; color:#858585; "><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+                                        </div>
+                                        <txt class="views_year">
+                                            8M views • 1 month ago
+                                        </txt>
+                                    </div>
+                                </div>
+                                <div class="optionBox">
+                                    <div class="options"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="channelIconBox">
+                                <div class="channelIcon"><img src="https://yt3.googleusercontent.com/Ybu5mW939QWZsOAxzsf1sOqHIFKf8QwY00Rt50hBLxJBjP5INAeD2zSnUMHn1uE6vf_rGwf2Wg=s160-c-k-c0x00ffffff-no-rj" class="channelImage"></div>
+                                <div class="nameBox">
+                                    <txt class="videoTitle">
+                                        MONSTER MAGNET VS EGG | POWERFUL MONSTER MAGNETS MEET
+                                    </txt>
+                                    <div class="channelNameVerificationBox">
+                                        <txt class="channelName">
+                                            M4 Tech
+                                        </txt>
+                                        <div class="verifiedIcon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%; color:#858585; "><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+                                        </div>
+                                        <txt class="views_year">
+                                            10M views • 4 years ago
+                                        </txt>
+                                    </div>
+                                </div>
+                                <div class="optionBox">
+                                    <div class="options"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="channelIconBox">
+                                <div class="channelIcon"><img src="https://yt3.googleusercontent.com/SAOzCuxtQ2wfgDrYeZm_Mqc6tnJEDPEEmUPqPVpHY-7k5p0PAsSteRxpfiM_i2bNSxXyBlAKZQ=s160-c-k-c0x00ffffff-no-rj" class="channelImage"></div>
+                                <div class="nameBox">
+                                    <txt class="videoTitle">
+                                        KUCHI ICE RECIPE | Mango Ice, Pineapple, Grapes, Lemon, Orange And More | Village Recipe
+                                    </txt>
+                                    <div class="channelNameVerificationBox">
+                                        <txt class="channelName">
+                                            Village Food Channel
+                                        </txt>
+                                        <div class="verifiedIcon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%; color:#858585; "><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+                                        </div>
+                                        <txt class="views_year">
+                                            87M views • 1 year ago
+                                        </txt>
+                                    </div>
+                                </div>
+                                <div class="optionBox">
+                                    <div class="options"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="duration">32:22</button>
+                            <img src="https://i.ytimg.com/vi/XHFzlyWVH8Q/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAAvSnQ3zEHfiRwBLCK3-HaVn8QhA" class="thumbnail">
+                        </td>
+                        <td>
+                            <button class="duration" style="margin-left: 328px;">2:37</button>
+                            <img src="https://i.ytimg.com/vi/wYZux3BMc5k/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIE4oQjAP&rs=AOn4CLB5Cr-0Z-tInh-HvhZVpTfdKiBDTg" class="thumbnail">
+                        </td>
+                        <td>
+                            <button class="duration" style="margin-left: 328px;">3:15</button>
+                            <img src="https://i.ytimg.com/vi/zzwRbKI2pn4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBJ4D0vJXQ-R_Wzx6xEhDb8wy9CiQ" class="thumbnail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="channelIconBox">
+                                <div class="channelIcon"><img src="https://yt3.googleusercontent.com/UXooTuh-6kLuXthO4A4Mbxdz8JRJ0hqrIAHWZXwpiGjWUo-TuQUYlXuuwdVtKztFSLjL3wK52g=s160-c-k-c0x00ffffff-no-rj" class="channelImage"></div>
+                                <div class="nameBox">
+                                    <txt class="videoTitle">
+                                        Kaztro - Alexa Voice Controlled Gaming Room Tour | Kaztro Vlog
+                                    </txt>
+                                    <div class="channelNameVerificationBox">
+                                        <txt class="channelName">
+                                            Kaztro Vlogs
+                                        </txt>
+                                        <div class="verifiedIcon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%; color:#858585; "><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+                                        </div>
+                                        <txt class="views_year">
+                                            2.4M views • 3 years ago
+                                        </txt>
+                                    </div>
+                                </div>
+                                <div class="optionBox">
+                                    <div class="options"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="channelIconBox">
+                                <div class="channelIcon"><img src="https://yt3.googleusercontent.com/_Mj_eHbehGaSOe8yi57I_b99kagnBcFNuWvgtM64eqqmZZ4jLRzhvCAkfakuZL-QswRXM3xNew=s160-c-k-c0x00ffffff-no-rj" class="channelImage"></div>
+                                <div class="nameBox">
+                                    <txt class="videoTitle">
+                                        IShowSpeed - Shake (Official Music Video)
+                                    </txt>
+                                    <div class="channelNameVerificationBox">
+                                        <txt class="channelName">
+                                            IShowSpeed
+                                        </txt>
+                                        <div class="verifiedIcon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%; color:#858585; "><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+                                        </div>
+                                        <txt class="views_year">
+                                            212M views • 2 years ago
+                                        </txt>
+                                    </div>
+                                </div>
+                                <div class="optionBox">
+                                    <div class="options"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="channelIconBox">
+                                <div class="channelIcon"><img src="https://yt3.googleusercontent.com/j01juFvKwHnKHdgcklpPKLkfNBuGbGJKLBwXVhbN_5LeCU3S9bTsHBL-MKPRQCjpZpfPJ_dJ=s160-c-k-c0x00ffffff-no-rj" class="channelImage"></div>
+                                <div class="nameBox">
+                                    <txt class="videoTitle">
+                                        YALGAAR - CARRYMINATI X Wily Frenzy
+                                    </txt>
+                                    <div class="channelNameVerificationBox">
+                                        <txt class="channelName">
+                                            CarryMinati
+                                        </txt>
+                                        <div class="verifiedIcon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%; color:#858585; "><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+                                        </div>
+                                        <txt class="views_year">
+                                            370M views • 4 years ago
+                                        </txt>
+                                    </div>
+                                </div>
+                                <div class="optionBox">
+                                    <div class="options"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
